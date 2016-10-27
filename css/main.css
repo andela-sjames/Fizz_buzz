@@ -1,0 +1,69 @@
+@import url('http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700');
+
+body{
+	background: #eee;
+}
+
+a{
+	position: relative;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	background-color: rgba(219, 87, 51, 1);
+	font-family: 'Yanone Kaffeesatz';
+	font-weight: 700;
+	font-size: 3em;
+	padding: 4px;
+	border-radius: 8px;
+	/* let's use box shadows to make the button look more 3-dimensional */
+	box-shadow: 0px 9px 0px rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+	margin: 100px auto;
+	width: 160px;
+	text-align: center;
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+/* now if we make the box shadows smaller when the button is clicked, it'll look like the button has been "pushed" */
+
+a:active{
+	box-shadow: 0px 3px 0px rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+	position: relative;
+	top: 6px;
+}
+
+#fbinput {
+    font-size: 18pt;
+    height: 42px;
+    width : 300px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  border-radius: none;
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+
+#central {
+    /*margin-top: 200px;*/
+    /*width:800px; 
+    margin:0 auto*/
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -140px 0 0 -150px;
+
+}
+
+/* click the button and see what happens! */
